@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Identity;
 using System;
+using Payout.Domain.IRepositories;
+using Payout.Domain.Repositories;
 
 namespace Payout.CoreAPI
 {
@@ -36,6 +38,8 @@ namespace Payout.CoreAPI
 
             services.Configure<AppSettingsCls.MailCredentials>(
                 Configuration.GetSection("MailCredentials"));
+
+            services.AddSingleton<IRepository, Repository>();
 
             // Add framework services.
 

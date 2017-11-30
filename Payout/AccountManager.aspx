@@ -12,9 +12,9 @@
 
     <%--<script src="Scripts/jquery-2.2.1.min.js"></script>
     <script src="h_ttp://code.jquery.com/ui/1.7.3/jquery-ui.js"></script>--%>
-
-
+    
     <script src="Scripts/Controllers/AccountManager.js"></script>
+    <script src="Scripts/Controllers/SecurityModuleController.js"></script>
     <script src="Scripts/Scripts.js"></script>
 
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -163,6 +163,16 @@
                         <div><span>Module Name: </span><input id="modname" type="text" /></div>                        
                         <br />
                         <input id="SubmitModule" type="submit" value="submit" />
+
+                        <br />
+
+                        <table>
+                        <thead>
+                            <tr><th>Id</th><th>Description</th><th>ParentId</th></tr>
+                        </thead>
+                        <tbody id="SecurityModules">
+                        </tbody>
+                        </table>
                     </div>
                                 
                 </div>

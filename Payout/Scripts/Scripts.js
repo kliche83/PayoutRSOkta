@@ -387,3 +387,19 @@ function CustomDialog(DialogText, autoOpen, height, width, modal, num_button, fn
         });
     }
 }
+
+
+//function GetApiUrl(HandleData) {
+//    $.ajax({
+//        type: "POST",
+//        url: "AccountManager.aspx/JSONRequestApiUrlFromClient",
+//        contentType: "application/json; charset=utf-8",
+//        dataType: "json",
+//        success: function (data) {
+//            HandleData(data.d);
+//        },
+//        error: function (jqXHR, textStatus, errorThrown) {
+//            HandleData("Error getting server Key: " + jqXHR.responseText);
+//        }
+//    });
+//}
